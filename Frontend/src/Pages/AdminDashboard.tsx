@@ -1253,7 +1253,7 @@ function AdminDashboard({
       <>
         <section className="dashboard-hero">
           <div className="dashboard-hero-copy">
-            <span className="admin-eyebrow">{dashboardDate.toLocaleDateString('ne-NP', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>
+            <span className="admin-eyebrow">राजपुर, नेपाल · व्यवस्थापन सारांश</span>
             <h2>नमस्कार, सम्पादक 👋</h2>
             <p>राना युथ क्लबको गतिविधि र वेबसाइट सामग्रीको एकै ठाउँबाट व्यवस्थापन गर्नुहोस्।</p>
             <div className="hero-actions"><button className="admin-primary-button" type="button" onClick={startNewArticle}>＋ नयाँ समाचार</button><button className="hero-secondary-action" type="button" onClick={() => setActiveSection('activities')}>गतिविधि हेर्नुहोस् <span>→</span></button></div>
@@ -1472,7 +1472,7 @@ function AdminDashboard({
     )
   }
 
-  function renderPlaceholder() {
+  function renderActiveSection() {
     if (section === 'dashboard' || section === 'news' || section === 'editor') return null
     if (section === 'activities') return renderActivities()
     if (section === 'photos') return renderPhotos()
@@ -1518,7 +1518,7 @@ function AdminDashboard({
           {section === 'dashboard' && renderDashboard()}
           {section === 'news' && renderNewsList()}
           {section === 'editor' && renderEditor()}
-          {section !== 'dashboard' && section !== 'news' && section !== 'editor' && renderPlaceholder()}
+          {section !== 'dashboard' && section !== 'news' && section !== 'editor' && renderActiveSection()}
         </main>
       </div>
     </div>
