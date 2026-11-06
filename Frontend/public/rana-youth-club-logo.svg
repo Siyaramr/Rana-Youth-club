@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">राना युथ क्लबको लोगो</title>
+  <circle cx="32" cy="32" r="30" fill="#edf4ee" stroke="#d8e6da" stroke-width="2"/>
+  <path d="M32 9 51 20v24L32 55 13 44V20L32 9Z" fill="none" stroke="#174b35" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M32 18v28M21 24l22 16m0-16L21 40" fill="none" stroke="#2f704e" stroke-linecap="round" stroke-width="2"/>
+  <circle cx="32" cy="32" r="4" fill="#b7d69e"/>
+</svg>

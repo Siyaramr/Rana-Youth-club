@@ -1,0 +1,154 @@
+.admin-auth-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 32px 18px;
+  color: #18243a;
+  background:
+    radial-gradient(ellipse at 10% 10%, rgb(179 38 54 / 8%), transparent 40%),
+    #f5f7fb;
+}
+
+.admin-auth-card {
+  width: min(100%, 440px);
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #e1e6ef;
+  border-radius: 12px;
+  box-shadow: 0 18px 48px rgb(12 29 56 / 10%);
+}
+
+.admin-auth-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  color: #0c1d38;
+  text-decoration: none;
+}
+
+.admin-auth-brand img {
+  border-radius: 50%;
+}
+
+.admin-auth-brand span {
+  display: grid;
+  gap: 3px;
+}
+
+.admin-auth-brand small {
+  color: #697386;
+}
+
+.admin-auth-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding: 5px;
+  margin-bottom: 24px;
+  background: #f5f7fb;
+  border-radius: 8px;
+}
+
+.admin-auth-tabs button {
+  min-height: 40px;
+  color: #526078;
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-auth-tabs button.active {
+  color: #fff;
+  background: #173b69;
+}
+
+.admin-auth-card h1 {
+  margin: 0;
+  color: #0c1d38;
+  font-size: 23px;
+}
+
+.admin-auth-description {
+  margin: 8px 0 20px;
+  color: #697386;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.admin-auth-warning,
+.admin-auth-notice {
+  padding: 11px 12px;
+  margin: 0 0 18px;
+  color: #695323;
+  background: #fff8e8;
+  border: 1px solid #f1e2bb;
+  border-radius: 6px;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.admin-auth-form {
+  display: grid;
+  gap: 15px;
+}
+
+.admin-auth-form label {
+  display: grid;
+  gap: 7px;
+  color: #34445c;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.admin-auth-form input {
+  width: 100%;
+  min-height: 42px;
+  padding: 8px 11px;
+  color: #18243a;
+  background: #fff;
+  border: 1px solid #d5dce7;
+  border-radius: 6px;
+}
+
+.admin-auth-submit {
+  min-height: 44px;
+  margin-top: 3px;
+  color: #fff;
+  background: #173b69;
+  border: 0;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-auth-submit:hover {
+  background: #0c1d38;
+}
+
+.admin-auth-notice {
+  margin: 16px 0 0;
+}
+
+.admin-auth-dashboard-link,
+.admin-auth-home-link {
+  display: block;
+  width: 100%;
+  padding: 10px 0 0;
+  color: #173b69;
+  background: transparent;
+  border: 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.admin-auth-home-link {
+  color: #697386;
+}
+
+@media (max-width: 480px) {
+  .admin-auth-card {
+    padding: 24px 20px;
+  }
+}

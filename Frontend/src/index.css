@@ -1,0 +1,71 @@
+:root {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  color: #18243a;
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --forest: #173b69;
+  --forest-deep: #0c1d38;
+  --green: #b32636;
+  --green-soft: #fbecef;
+  --ink: #18243a;
+  --muted: #697386;
+  --line: #e1e6ef;
+  --paper: #f5f7fb;
+  --white: #fff;
+  --serif: 'Noto Serif Devanagari', 'Noto Sans Devanagari', serif;
+  --gold: #c53745;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+body,
+button,
+input {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input {
+  font-size: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+::selection {
+  color: #fff;
+  background: var(--green);
+}
